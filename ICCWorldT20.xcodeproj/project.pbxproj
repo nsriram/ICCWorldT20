@@ -29,6 +29,8 @@
 		C3763B9D15F3D76A009EC1F8 /* group_64.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763B9C15F3D76A009EC1F8 /* group_64.png */; };
 		C3763BA115F3D9E6009EC1F8 /* stadium.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763BA015F3D9E6009EC1F8 /* stadium.png */; };
 		C3763BA315F3DC3E009EC1F8 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763BA215F3DC3E009EC1F8 /* schedule.png */; };
+		C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */; };
+		C39A4E1315FC02AF00D1E433 /* fixtures.json in Resources */ = {isa = PBXBuildFile; fileRef = C39A4E1215FC02AF00D1E433 /* fixtures.json */; };
 		C3BFD4B615F876C7007E9BF2 /* records.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4B515F876C7007E9BF2 /* records.png */; };
 		C3BFD4B915F879BB007E9BF2 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4B815F879BB007E9BF2 /* trophy.png */; };
 		C3BFD4BD15F87FC8007E9BF2 /* team.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4BC15F87FC8007E9BF2 /* team.png */; };
@@ -81,6 +83,9 @@
 		C3763B9C15F3D76A009EC1F8 /* group_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_64.png; sourceTree = "<group>"; };
 		C3763BA015F3D9E6009EC1F8 /* stadium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stadium.png; sourceTree = "<group>"; };
 		C3763BA215F3DC3E009EC1F8 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedule.png; sourceTree = "<group>"; };
+		C39A4E0E15FBF6AB00D1E433 /* FixturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixturesViewController.h; sourceTree = "<group>"; };
+		C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixturesViewController.m; sourceTree = "<group>"; };
+		C39A4E1215FC02AF00D1E433 /* fixtures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fixtures.json; sourceTree = "<group>"; };
 		C3BFD4B515F876C7007E9BF2 /* records.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = records.png; sourceTree = "<group>"; };
 		C3BFD4B815F879BB007E9BF2 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
 		C3BFD4BC15F87FC8007E9BF2 /* team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team.png; sourceTree = "<group>"; };
@@ -181,7 +186,10 @@
 				C3E0824B15FBABAA000B703C /* GroupsViewController.m */,
 				C3E0825815FBB0EB000B703C /* BaseAppController.h */,
 				C3E0825915FBB0EB000B703C /* BaseAppController.m */,
+				C39A4E0E15FBF6AB00D1E433 /* FixturesViewController.h */,
+				C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
+				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 			);
 			path = ICCWorldT20;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 				C34A922415FBDEEF005B78FC /* zimbabwe.png in Resources */,
 				C3DA5ED715FBDFC500E3E5F4 /* ireland.png in Resources */,
 				C3DA5ED915FBE19600E3E5F4 /* afghanistan.png in Resources */,
+				C39A4E1315FC02AF00D1E433 /* fixtures.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +365,7 @@
 				C3E0828315FBBEC7000B703C /* SBJsonStreamParser.m in Sources */,
 				C3E0828415FBBEC7000B703C /* SBJsonParser.m in Sources */,
 				C3E0828515FBBEC7000B703C /* NSObject+SBJson.m in Sources */,
+				C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

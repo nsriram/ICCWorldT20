@@ -70,11 +70,14 @@
         return nil;
     }
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(0, 0, self.view.frame.size.width, 24.0);
-    label.textColor = [UIColor whiteColor];
-    label.font = [UIFont fontWithName:@"Arial-BoldMT" size:16.0];
+    label.frame = CGRectMake(1, 0, self.view.frame.size.width, 24.0);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor colorWithRed:245.0/255.0 
+                                               green:245.0/255.0
+                                                blue:245.0/255.0 
+                                               alpha:1];
+    label.font = [UIFont fontWithName:@"ArialRoundedMTBold" size:15.0];
     label.text = sectionTitle;
-    label.backgroundColor = [UIColor clearColor];    
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 24.0)];
     [headerView setBackgroundColor:[UIColor colorWithRed:57/255.0 
                                                    green:128.0/255.0

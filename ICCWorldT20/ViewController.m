@@ -13,6 +13,10 @@
     [self navigateTo:@"GroupsViewController"];
 }
 
+-(IBAction) fixtures:(UIButton *)current{ 
+    [self navigateTo:@"FixturesViewController"];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
