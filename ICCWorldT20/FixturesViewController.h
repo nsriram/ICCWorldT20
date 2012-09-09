@@ -5,5 +5,5 @@
     NSArray *days;
     NSMutableDictionary *fixtures;
 }
-@property (nonatomic, retain) IBOutlet UITableView *fixturesTable;
+@property (nonatomic, strong) IBOutlet UITableView *fixturesTable;
 @end

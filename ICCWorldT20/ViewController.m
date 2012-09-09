@@ -1,5 +1,6 @@
 #import "ViewController.h"
 #import "AppConstants.h"
+#import "PastWCViewController.h"
 
 @implementation ViewController
 
@@ -9,12 +10,23 @@
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
+-(void) navigateToPastViewController:(NSString*) controllerName year:(NSString*) pastYear{
+    PastWCViewController *viewController = 
+    [self.storyboard instantiateViewControllerWithIdentifier:controllerName];
+    [viewController setPastYear:pastYear];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 -(IBAction) groups:(UIButton *)current{ 
     [self navigateTo:@"GroupsViewController"];
 }
 
 -(IBAction) fixtures:(UIButton *)current{ 
     [self navigateTo:@"FixturesViewController"];
+}
+
+-(IBAction) past:(UIButton *)current{
+    [self navigateToPastViewController:@"PastWCViewController" year:[[current titleLabel] text]];
 }
 
 - (void)didReceiveMemoryWarning {

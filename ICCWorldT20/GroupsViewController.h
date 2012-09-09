@@ -6,5 +6,5 @@
     NSArray *groups;
     NSMutableDictionary *teams;
 }
-@property (nonatomic, retain) IBOutlet UITableView *groupsTable;
+@property (nonatomic, strong) IBOutlet UITableView *groupsTable;
 @end

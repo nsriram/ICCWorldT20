@@ -53,6 +53,7 @@
 		C3E0828315FBBEC7000B703C /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0827315FBBEC6000B703C /* SBJsonStreamParser.m */; };
 		C3E0828415FBBEC7000B703C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0827515FBBEC7000B703C /* SBJsonParser.m */; };
 		C3E0828515FBBEC7000B703C /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0827815FBBEC7000B703C /* NSObject+SBJson.m */; };
+		C3F219B215FC2B680056A92F /* PastWCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F219B115FC2B680056A92F /* PastWCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +125,8 @@
 		C3E0827715FBBEC7000B703C /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
 		C3E0827815FBBEC7000B703C /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
 		C3E0827915FBBEC7000B703C /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		C3F219B015FC2B680056A92F /* PastWCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastWCViewController.h; sourceTree = "<group>"; };
+		C3F219B115FC2B680056A92F /* PastWCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastWCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,8 @@
 				C3E0825915FBB0EB000B703C /* BaseAppController.m */,
 				C39A4E0E15FBF6AB00D1E433 /* FixturesViewController.h */,
 				C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */,
+				C3F219B015FC2B680056A92F /* PastWCViewController.h */,
+				C3F219B115FC2B680056A92F /* PastWCViewController.m */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 			);
@@ -366,6 +371,7 @@
 				C3E0828415FBBEC7000B703C /* SBJsonParser.m in Sources */,
 				C3E0828515FBBEC7000B703C /* NSObject+SBJson.m in Sources */,
 				C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */,
+				C3F219B215FC2B680056A92F /* PastWCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
