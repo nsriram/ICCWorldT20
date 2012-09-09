@@ -13,18 +13,19 @@
 }
 
 #pragma mark - View lifecycle
--(MKPointAnnotation*) annotation:(CLLocationCoordinate2D)groundCoordinate title:(NSString*)groundName {
+-(MKPointAnnotation*) annotation:(CLLocationCoordinate2D)groundCoordinate title:(NSString*)groundName subtitle:(NSString*)details{
     MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
     annotation.coordinate = groundCoordinate; 
     annotation.title = groundName;
+    annotation.subtitle = details;
     return annotation;
 }
 
 //TODO:To remove hardcoding for future tournaments
 -(void) plotStadiums {
-    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(6.353657,81.026477) title:@"Mahinda Rajapaksa Stadium"]];
-    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(6.939619,79.872027) title:@"R Premadasa Stadium"]];
-    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(7.280278,80.722222) title:@"Pallekele Stadium"]];
+    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(6.353657,81.026477) title:@"Mahinda Rajapaksa Stadium" subtitle:@"Hambantota, Capacity 35,000"]];
+    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(6.939619,79.872027) title:@"R Premadasa Stadium" subtitle:@"Colombo, Capacity 35,000"]];
+    [self.mapView addAnnotation:[self annotation:CLLocationCoordinate2DMake(7.280278,80.722222) title:@"Pallekele Stadium" subtitle:@"Kandy, Capacity 35,000"]];
 }
 
 - (void)viewDidLoad {
