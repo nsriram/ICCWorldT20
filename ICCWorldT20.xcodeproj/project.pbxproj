@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30AC69615FD2A36003DF2ED /* GroundMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30AC69515FD2A36003DF2ED /* GroundMapViewController.m */; };
+		C30AC69915FD2AFE003DF2ED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AC69815FD2AFE003DF2ED /* MapKit.framework */; };
+		C30AC69B15FD2B08003DF2ED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AC69A15FD2B08003DF2ED /* CoreLocation.framework */; };
 		C328152015F6E2CE002D0870 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C328151F15F6E2CE002D0870 /* QuartzCore.framework */; };
 		C34A920915FBD71E005B78FC /* bangladesh.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A91FD15FBD71E005B78FC /* bangladesh.png */; };
 		C34A920A15FBD71E005B78FC /* newzealand.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A91FE15FBD71E005B78FC /* newzealand.png */; };
@@ -62,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C30AC69415FD2A36003DF2ED /* GroundMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundMapViewController.h; sourceTree = "<group>"; };
+		C30AC69515FD2A36003DF2ED /* GroundMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroundMapViewController.m; sourceTree = "<group>"; };
+		C30AC69815FD2AFE003DF2ED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C30AC69A15FD2B08003DF2ED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C328151F15F6E2CE002D0870 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C34A91FD15FBD71E005B78FC /* bangladesh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bangladesh.png; sourceTree = "<group>"; };
 		C34A91FE15FBD71E005B78FC /* newzealand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newzealand.png; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30AC69B15FD2B08003DF2ED /* CoreLocation.framework in Frameworks */,
+				C30AC69915FD2AFE003DF2ED /* MapKit.framework in Frameworks */,
 				C328152015F6E2CE002D0870 /* QuartzCore.framework in Frameworks */,
 				C3763B8015F3D551009EC1F8 /* UIKit.framework in Frameworks */,
 				C3763B8215F3D551009EC1F8 /* Foundation.framework in Frameworks */,
@@ -175,6 +184,8 @@
 		C3763B7E15F3D551009EC1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C30AC69A15FD2B08003DF2ED /* CoreLocation.framework */,
+				C30AC69815FD2AFE003DF2ED /* MapKit.framework */,
 				C328151F15F6E2CE002D0870 /* QuartzCore.framework */,
 				C3763B7F15F3D551009EC1F8 /* UIKit.framework */,
 				C3763B8115F3D551009EC1F8 /* Foundation.framework */,
@@ -206,6 +217,8 @@
 				C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */,
 				C3F219B015FC2B680056A92F /* PastWCViewController.h */,
 				C3F219B115FC2B680056A92F /* PastWCViewController.m */,
+				C30AC69415FD2A36003DF2ED /* GroundMapViewController.h */,
+				C30AC69515FD2A36003DF2ED /* GroundMapViewController.m */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 				C3CF3EF615FCCE6D00D457F7 /* results.json */,
@@ -394,6 +407,7 @@
 				C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */,
 				C3F219B215FC2B680056A92F /* PastWCViewController.m in Sources */,
 				C3CF3EFB15FCCE9300D457F7 /* JSONUtil.m in Sources */,
+				C30AC69615FD2A36003DF2ED /* GroundMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

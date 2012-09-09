@@ -29,6 +29,10 @@
     [self navigateToPastViewController:@"PastWCViewController" year:[[current titleLabel] text]];
 }
 
+-(IBAction) grounds:(UIButton *)current{ 
+    [self navigateTo:@"GroundMapViewController"];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -40,6 +44,7 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
+    [self.navigationController setNavigationBarHidden:YES];
     [self applyGradientBackground];
     [super viewDidLoad];
 }
@@ -48,8 +53,8 @@
     [super viewDidUnload];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES];    
     [super viewWillAppear:animated];
 }
 
