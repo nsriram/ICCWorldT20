@@ -54,6 +54,9 @@
 		C3E0828415FBBEC7000B703C /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0827515FBBEC7000B703C /* SBJsonParser.m */; };
 		C3E0828515FBBEC7000B703C /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0827815FBBEC7000B703C /* NSObject+SBJson.m */; };
 		C3F219B215FC2B680056A92F /* PastWCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F219B115FC2B680056A92F /* PastWCViewController.m */; };
+		C3F219B515FC2F6A0056A92F /* 2009Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */; };
+		C3F219B615FC2F6A0056A92F /* 2010Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */; };
+		C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B715FC30B30056A92F /* 2007Winners.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +130,9 @@
 		C3E0827915FBBEC7000B703C /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		C3F219B015FC2B680056A92F /* PastWCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastWCViewController.h; sourceTree = "<group>"; };
 		C3F219B115FC2B680056A92F /* PastWCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastWCViewController.m; sourceTree = "<group>"; };
+		C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2009Winners.jpg; sourceTree = "<group>"; };
+		C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2010Winners.jpg; sourceTree = "<group>"; };
+		C3F219B715FC30B30056A92F /* 2007Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2007Winners.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,9 @@
 		C3E0824815FBAB7E000B703C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C3F219B715FC30B30056A92F /* 2007Winners.jpg */,
+				C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */,
+				C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */,
 				C3DA5ED815FBE19600E3E5F4 /* afghanistan.png */,
 				C3DA5ED615FBDFC500E3E5F4 /* ireland.png */,
 				C34A921F15FBDDB1005B78FC /* india.png */,
@@ -342,6 +351,9 @@
 				C3DA5ED715FBDFC500E3E5F4 /* ireland.png in Resources */,
 				C3DA5ED915FBE19600E3E5F4 /* afghanistan.png in Resources */,
 				C39A4E1315FC02AF00D1E433 /* fixtures.json in Resources */,
+				C3F219B515FC2F6A0056A92F /* 2009Winners.jpg in Resources */,
+				C3F219B615FC2F6A0056A92F /* 2010Winners.jpg in Resources */,
+				C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
