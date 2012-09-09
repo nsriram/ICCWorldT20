@@ -1,6 +1,6 @@
 #import "FixturesViewController.h"
 #import "AppConstants.h"
-#import "SBJson.h"
+#import "JSONUtil.h"
 
 @interface FixturesViewController()
 @property (nonatomic, retain) NSArray *days;
@@ -19,28 +19,9 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Data loading
-
-+(NSString *) fetchFixtures {
-    NSString *fixturesJSON = @"";
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fixtures" ofType:@"json"];  
-    if (filePath) {
-        fixturesJSON = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];  
-    }
-    return fixturesJSON;
-}
-
--(NSMutableDictionary *) parseFixturesJSON:(NSString *) fixturesJSON {
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSDictionary *jsonData = (NSDictionary*)[parser objectWithString:fixturesJSON error:nil];    
-    return [jsonData objectForKey:@"fixtures"];
-}
-
-
 -(NSMutableDictionary*) fixtures {
     if(!fixtures){
-        NSString *fixturesJSON = [FixturesViewController fetchFixtures];
-        fixtures = [self parseFixturesJSON:fixturesJSON];
+        fixtures = [JSONUtil loadJSON:@"fixtures" mainKey:@"fixtures"];
     }
     return fixtures;
 }
@@ -51,8 +32,6 @@
     }
     return days;
 }
-
-#pragma mark - TableView methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [[self days] count];

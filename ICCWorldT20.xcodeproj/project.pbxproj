@@ -35,6 +35,8 @@
 		C3BFD4B915F879BB007E9BF2 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4B815F879BB007E9BF2 /* trophy.png */; };
 		C3BFD4BD15F87FC8007E9BF2 /* team.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4BC15F87FC8007E9BF2 /* team.png */; };
 		C3BFD4BF15F887C1007E9BF2 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = C3BFD4BE15F887C1007E9BF2 /* player.png */; };
+		C3CF3EF715FCCE6D00D457F7 /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = C3CF3EF615FCCE6D00D457F7 /* results.json */; };
+		C3CF3EFB15FCCE9300D457F7 /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF3EFA15FCCE9300D457F7 /* JSONUtil.m */; };
 		C3DA5ED715FBDFC500E3E5F4 /* ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5ED615FBDFC500E3E5F4 /* ireland.png */; };
 		C3DA5ED915FBE19600E3E5F4 /* afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5ED815FBE19600E3E5F4 /* afghanistan.png */; };
 		C3E0824C15FBABAA000B703C /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0824B15FBABAA000B703C /* GroupsViewController.m */; };
@@ -94,6 +96,9 @@
 		C3BFD4B815F879BB007E9BF2 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
 		C3BFD4BC15F87FC8007E9BF2 /* team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team.png; sourceTree = "<group>"; };
 		C3BFD4BE15F887C1007E9BF2 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		C3CF3EF615FCCE6D00D457F7 /* results.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = results.json; sourceTree = "<group>"; };
+		C3CF3EF915FCCE9300D457F7 /* JSONUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONUtil.h; sourceTree = "<group>"; };
+		C3CF3EFA15FCCE9300D457F7 /* JSONUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONUtil.m; sourceTree = "<group>"; };
 		C3DA5ED615FBDFC500E3E5F4 /* ireland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ireland.png; sourceTree = "<group>"; };
 		C3DA5ED815FBE19600E3E5F4 /* afghanistan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afghanistan.png; sourceTree = "<group>"; };
 		C3E0824A15FBABAA000B703C /* GroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupsViewController.h; sourceTree = "<group>"; };
@@ -185,6 +190,8 @@
 				C3E0824815FBAB7E000B703C /* images */,
 				C3E0825415FBAC79000B703C /* AppConstants.h */,
 				C3E0825515FBAC79000B703C /* AppConstants.m */,
+				C3CF3EF915FCCE9300D457F7 /* JSONUtil.h */,
+				C3CF3EFA15FCCE9300D457F7 /* JSONUtil.m */,
 				C3763B8E15F3D551009EC1F8 /* AppDelegate.h */,
 				C3763B8F15F3D551009EC1F8 /* AppDelegate.m */,
 				C3763B9115F3D551009EC1F8 /* MainStoryboard.storyboard */,
@@ -201,6 +208,7 @@
 				C3F219B115FC2B680056A92F /* PastWCViewController.m */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
+				C3CF3EF615FCCE6D00D457F7 /* results.json */,
 			);
 			path = ICCWorldT20;
 			sourceTree = "<group>";
@@ -354,6 +362,7 @@
 				C3F219B515FC2F6A0056A92F /* 2009Winners.jpg in Resources */,
 				C3F219B615FC2F6A0056A92F /* 2010Winners.jpg in Resources */,
 				C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */,
+				C3CF3EF715FCCE6D00D457F7 /* results.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +393,7 @@
 				C3E0828515FBBEC7000B703C /* NSObject+SBJson.m in Sources */,
 				C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */,
 				C3F219B215FC2B680056A92F /* PastWCViewController.m in Sources */,
+				C3CF3EFB15FCCE9300D457F7 /* JSONUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

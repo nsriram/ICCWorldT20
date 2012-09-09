@@ -1,6 +1,6 @@
 #import "GroupsViewController.h"
 #import "AppConstants.h"
-#import "SBJson.h"
+#import "JSONUtil.h"
 
 @interface GroupsViewController()
 @property (nonatomic, retain) NSArray *groups;
@@ -20,27 +20,9 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma loading JSON Data
-
-+(NSString *)loadGroups {
-    NSString *groupsJSON = @"";
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"groups" ofType:@"json"];  
-    if (filePath) {
-        groupsJSON = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];  
-    }
-    return groupsJSON;
-}
-
--(NSMutableDictionary *) parseGroupsJSON:(NSString *) groupsJSON {
-    SBJsonParser *parser = [[SBJsonParser alloc] init];
-    NSDictionary *jsonData = (NSDictionary*)[parser objectWithString:groupsJSON error:nil];    
-    return [jsonData objectForKey:@"groups"];
-}
-
 -(NSMutableDictionary*) teams {
     if(!teams){
-        NSString *groupsJSON = [GroupsViewController loadGroups];
-        teams = [self parseGroupsJSON:groupsJSON];
+        teams = [JSONUtil loadJSON:@"groups" mainKey:@"groups"];
     }
     return teams;
 }
