@@ -7,14 +7,22 @@
 -(void) navigateTo:(NSString*) controllerName {
     ViewController *viewController = 
     [self.storyboard instantiateViewControllerWithIdentifier:controllerName];
-    [self.navigationController pushViewController:viewController animated:YES];
+    [UIView beginAnimations:@"transition" context:nil];
+    [UIView setAnimationDuration:0.6];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+    [self.navigationController pushViewController:viewController animated:YES];    
+    [UIView commitAnimations];
 }
 
 -(void) navigateToPastViewController:(NSString*) controllerName year:(NSString*) pastYear{
     PastWCViewController *viewController = 
     [self.storyboard instantiateViewControllerWithIdentifier:controllerName];
     [viewController setPastYear:pastYear];
-    [self.navigationController pushViewController:viewController animated:YES];
+    [UIView beginAnimations:@"transition" context:nil];
+    [UIView setAnimationDuration:0.6];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+    [self.navigationController pushViewController:viewController animated:YES];    
+    [UIView commitAnimations];
 }
 
 -(IBAction) groups:(UIButton *)current{ 

@@ -14,13 +14,27 @@
 
 #pragma mark - View lifecycle
 
-- (void)swipeRight:(UIPinchGestureRecognizer *)recognizer  {
+- (void)swipe:(UISwipeGestureRecognizer *)recognizer  {
+    [UIView beginAnimations:@"transition" context:nil];
+    [UIView setAnimationDuration:0.6];
+    int transition = UIViewAnimationTransitionFlipFromRight;
+    if(recognizer.direction == UISwipeGestureRecognizerDirectionLeft){
+        transition = UIViewAnimationTransitionFlipFromLeft;
+    }
+    [UIView setAnimationTransition:transition forView:self.navigationController.view cache:NO];
     [self.navigationController popViewControllerAnimated:TRUE];
+    [UIView commitAnimations];
+}
+
+-(void) bindSwipeLeft {
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    [[self view] addGestureRecognizer:recognizer];
 }
 
 -(void) bindSwipeRight {
-    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight:)];
-    [recognizer setDirection:(UISwipeGestureRecognizerDirectionRight)];
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    [recognizer setDirection:(UISwipeGestureRecognizerDirectionLeft)];
     [[self view] addGestureRecognizer:recognizer];
 }
 
@@ -31,6 +45,7 @@
 - (void)viewDidLoad {
     [self applyGradientBackground];
     [self bindSwipeRight];
+    [self bindSwipeLeft];
     [super viewDidLoad];
 }
 
