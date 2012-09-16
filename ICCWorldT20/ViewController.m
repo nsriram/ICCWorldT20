@@ -32,6 +32,9 @@
 -(IBAction) fixtures:(UIButton *)current{ 
     [self navigateTo:@"FixturesViewController"];
 }
+-(IBAction) records:(UIButton *)current {
+    [self navigateTo:@"RecordsViewController"];    
+}
 
 -(IBAction) past:(UIButton *)current{
     [self navigateToPastViewController:@"PastWCViewController" year:[[current titleLabel] text]];
