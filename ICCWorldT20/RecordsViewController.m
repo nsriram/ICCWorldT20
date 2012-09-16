@@ -43,7 +43,7 @@
 
     cell.textLabel.text = key;
     cell.detailTextLabel.text = [self.records objectForKey:key];
-    cell.detailTextLabel.numberOfLines = 2;
+    cell.detailTextLabel.numberOfLines = 3;
     cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
     cell.detailTextLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     return cell;
