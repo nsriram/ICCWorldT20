@@ -29,6 +29,10 @@
     [self navigateTo:@"GroupsViewController"];
 }
 
+-(IBAction) teams:(UIButton *)current{ 
+    [self navigateTo:@"TeamsViewController"];
+}
+
 -(IBAction) fixtures:(UIButton *)current{ 
     [self navigateTo:@"FixturesViewController"];
 }

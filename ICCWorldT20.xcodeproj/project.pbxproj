@@ -64,6 +64,7 @@
 		C3F219B515FC2F6A0056A92F /* 2009Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */; };
 		C3F219B615FC2F6A0056A92F /* 2010Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */; };
 		C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B715FC30B30056A92F /* 2007Winners.jpg */; };
+		C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F2A259160567F40054C984 /* TeamsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,8 @@
 		C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2009Winners.jpg; sourceTree = "<group>"; };
 		C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2010Winners.jpg; sourceTree = "<group>"; };
 		C3F219B715FC30B30056A92F /* 2007Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2007Winners.jpg; sourceTree = "<group>"; };
+		C3F2A258160567F40054C984 /* TeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamsViewController.h; sourceTree = "<group>"; };
+		C3F2A259160567F40054C984 /* TeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +229,8 @@
 				C3F219B115FC2B680056A92F /* PastWCViewController.m */,
 				C30AC69415FD2A36003DF2ED /* GroundMapViewController.h */,
 				C30AC69515FD2A36003DF2ED /* GroundMapViewController.m */,
+				C3F2A258160567F40054C984 /* TeamsViewController.h */,
+				C3F2A259160567F40054C984 /* TeamsViewController.m */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 				C3CF3EF615FCCE6D00D457F7 /* results.json */,
@@ -418,6 +423,7 @@
 				C3CF3EFB15FCCE9300D457F7 /* JSONUtil.m in Sources */,
 				C30AC69615FD2A36003DF2ED /* GroundMapViewController.m in Sources */,
 				C398A04316053B2E00D1DCBF /* RecordsViewController.m in Sources */,
+				C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
