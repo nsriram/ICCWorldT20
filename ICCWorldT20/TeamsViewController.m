@@ -1,51 +1,47 @@
 #import "TeamsViewController.h"
-
+#import "PlayersController.h"
 @implementation TeamsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
     return self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+
+-(void) showPlayers:(NSString*) teamName {
+    PlayersController *viewController = 
+    [self.storyboard instantiateViewControllerWithIdentifier:@"PlayersController"];
+    [viewController setTeamName:teamName];
+    [viewController.teamLabel setText:teamName];
     
-    // Release any cached data, images, etc that aren't in use.
+    [UIView beginAnimations:@"transition" context:nil];
+    [UIView setAnimationDuration:0.6];
+    [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
+    [self.navigationController pushViewController:viewController animated:YES];    
+    [UIView commitAnimations];
 }
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView
-{
-}
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 }
-*/
 
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+-(IBAction)players:(id)sender {
+    UIButton *button = (UIButton*)sender;
+    NSString *teamName = button.titleLabel.text;
+    [self showPlayers:teamName];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+}
 @end

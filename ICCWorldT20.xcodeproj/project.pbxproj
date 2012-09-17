@@ -22,6 +22,7 @@
 		C34A921415FBD71E005B78FC /* england.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A920815FBD71E005B78FC /* england.png */; };
 		C34A922015FBDDB1005B78FC /* india.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A921F15FBDDB1005B78FC /* india.png */; };
 		C34A922415FBDEEF005B78FC /* zimbabwe.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A922315FBDEEF005B78FC /* zimbabwe.png */; };
+		C35A97131606DF7000BAE529 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = C35A97121606DF7000BAE529 /* players.json */; };
 		C3763B8015F3D551009EC1F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B7F15F3D551009EC1F8 /* UIKit.framework */; };
 		C3763B8215F3D551009EC1F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B8115F3D551009EC1F8 /* Foundation.framework */; };
 		C3763B8415F3D551009EC1F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B8315F3D551009EC1F8 /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 		C3763B9D15F3D76A009EC1F8 /* group_64.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763B9C15F3D76A009EC1F8 /* group_64.png */; };
 		C3763BA115F3D9E6009EC1F8 /* stadium.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763BA015F3D9E6009EC1F8 /* stadium.png */; };
 		C3763BA315F3DC3E009EC1F8 /* schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = C3763BA215F3DC3E009EC1F8 /* schedule.png */; };
+		C37785EE160590500050F40A /* PlayersController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37785ED160590500050F40A /* PlayersController.m */; };
 		C398A04316053B2E00D1DCBF /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C398A04216053B2E00D1DCBF /* RecordsViewController.m */; };
 		C39A4E1015FBF6AB00D1E433 /* FixturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C39A4E0F15FBF6AB00D1E433 /* FixturesViewController.m */; };
 		C39A4E1315FC02AF00D1E433 /* fixtures.json in Resources */ = {isa = PBXBuildFile; fileRef = C39A4E1215FC02AF00D1E433 /* fixtures.json */; };
@@ -84,6 +86,7 @@
 		C34A920815FBD71E005B78FC /* england.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = england.png; sourceTree = "<group>"; };
 		C34A921F15FBDDB1005B78FC /* india.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = india.png; sourceTree = "<group>"; };
 		C34A922315FBDEEF005B78FC /* zimbabwe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zimbabwe.png; path = ../zimbabwe.png; sourceTree = "<group>"; };
+		C35A97121606DF7000BAE529 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		C3763B7B15F3D551009EC1F8 /* ICCWorldT20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICCWorldT20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3763B7F15F3D551009EC1F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3763B8115F3D551009EC1F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 		C3763B9C15F3D76A009EC1F8 /* group_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = group_64.png; sourceTree = "<group>"; };
 		C3763BA015F3D9E6009EC1F8 /* stadium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stadium.png; sourceTree = "<group>"; };
 		C3763BA215F3DC3E009EC1F8 /* schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schedule.png; sourceTree = "<group>"; };
+		C37785EC160590500050F40A /* PlayersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayersController.h; sourceTree = "<group>"; };
+		C37785ED160590500050F40A /* PlayersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersController.m; sourceTree = "<group>"; };
 		C398A04116053B2E00D1DCBF /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
 		C398A04216053B2E00D1DCBF /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
 		C39A4E0E15FBF6AB00D1E433 /* FixturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixturesViewController.h; sourceTree = "<group>"; };
@@ -231,6 +236,9 @@
 				C30AC69515FD2A36003DF2ED /* GroundMapViewController.m */,
 				C3F2A258160567F40054C984 /* TeamsViewController.h */,
 				C3F2A259160567F40054C984 /* TeamsViewController.m */,
+				C37785EC160590500050F40A /* PlayersController.h */,
+				C37785ED160590500050F40A /* PlayersController.m */,
+				C35A97121606DF7000BAE529 /* players.json */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 				C3CF3EF615FCCE6D00D457F7 /* results.json */,
@@ -390,6 +398,7 @@
 				C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */,
 				C3CF3EF715FCCE6D00D457F7 /* results.json in Resources */,
 				C3332A1716054F9B009E59DC /* records.json in Resources */,
+				C35A97131606DF7000BAE529 /* players.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +433,7 @@
 				C30AC69615FD2A36003DF2ED /* GroundMapViewController.m in Sources */,
 				C398A04316053B2E00D1DCBF /* RecordsViewController.m in Sources */,
 				C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */,
+				C37785EE160590500050F40A /* PlayersController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
