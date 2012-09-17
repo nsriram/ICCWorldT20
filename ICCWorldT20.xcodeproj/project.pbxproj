@@ -47,6 +47,8 @@
 		C3CF3EF715FCCE6D00D457F7 /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = C3CF3EF615FCCE6D00D457F7 /* results.json */; };
 		C3CF3EFB15FCCE9300D457F7 /* JSONUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF3EFA15FCCE9300D457F7 /* JSONUtil.m */; };
 		C3D2876816071D5000A6CA39 /* iccstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = C3D2876716071D5000A6CA39 /* iccstyle.css */; };
+		C3D2876D1607233D00A6CA39 /* iccstyle.css in CopyFiles */ = {isa = PBXBuildFile; fileRef = C3D2876716071D5000A6CA39 /* iccstyle.css */; };
+		C3D2876E1607233D00A6CA39 /* latest.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = C35A97281607150500BAE529 /* latest.html */; };
 		C3DA5ED715FBDFC500E3E5F4 /* ireland.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5ED615FBDFC500E3E5F4 /* ireland.png */; };
 		C3DA5ED915FBE19600E3E5F4 /* afghanistan.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5ED815FBE19600E3E5F4 /* afghanistan.png */; };
 		C3E0824C15FBABAA000B703C /* GroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E0824B15FBABAA000B703C /* GroupsViewController.m */; };
@@ -71,6 +73,20 @@
 		C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B715FC30B30056A92F /* 2007Winners.jpg */; };
 		C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F2A259160567F40054C984 /* TeamsViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3D2876C1607232A00A6CA39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C3D2876D1607233D00A6CA39 /* iccstyle.css in CopyFiles */,
+				C3D2876E1607233D00A6CA39 /* latest.html in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C30AC69415FD2A36003DF2ED /* GroundMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundMapViewController.h; sourceTree = "<group>"; };
@@ -340,6 +356,7 @@
 				C3763B7715F3D551009EC1F8 /* Sources */,
 				C3763B7815F3D551009EC1F8 /* Frameworks */,
 				C3763B7915F3D551009EC1F8 /* Resources */,
+				C3D2876C1607232A00A6CA39 /* CopyFiles */,
 			);
 			buildRules = (
 			);
