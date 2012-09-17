@@ -360,12 +360,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dVN-gA-hXw" id="yhQ-mj-WMn"/>
+                                </connections>
                             </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" id="0Jf-um-9cD">
+                                <rect key="frame" x="150" y="198" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="0Jf-um-9cD" id="hRq-D9-2nQ"/>
                         <outlet property="latestWebView" destination="Y78-2l-QRW" id="aIW-Og-Js9"/>
                     </connections>
                 </viewController>
@@ -961,6 +969,7 @@
         <class className="PointsViewController" superclassName="BaseAppController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PointsViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="latestWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>

@@ -1,0 +1,18 @@
+{"fixtures":{
+    "Sep 18, Tue":[{"match" : "Sri Lanka v Zimbabwe", "details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
+    "Sep 19, Wed":[{"match" : "Australia v Ireland","details" : "10:00 GMT, R Premadasa Stadium"},
+              {"match" : "Afghanistan v India","details" : "14:00 GMT, R Premadasa Stadium"}],
+    "Sep 20, Thu":[{"match" : "South Africa v Zimbabwe","details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
+    "Sep 21, Fri":[{"match" : "Bangladesh v New Zealand","details" : "10:00 GMT, Pallekele Stadium"},
+              {"match" : "Afghanistan v England", "details" : "14:00 GMT, R Premadasa Stadium"}],
+    "Sep 22, Sat":[{"match" : "Sri Lanka v South Africa","details" : "10:00 GMT, Mahinda Rajapaksa Stadium"},
+              {"match" : "Australia v West Indies","details" : "14:00 GMT, R Premadasa Stadium"}],
+    "Sep 23, Sun":[{"match" : "New Zealand v Pakistan","details" : "10:00 GMT, Pallekele Stadium"},
+              {"match" : "England v India","details" : "14:00 GMT, R Premadasa Stadium"}],
+    "Sep 24, Mon":[{"match" : "Ireland v West Indies","details" : "14:00 GMT, R Premadasa Stadium"}],
+    "Sep 25, Tue":[{"match" : "Bangladesh v Pakistan","details" : "14:00 GMT, Pallekele Stadium"}],
+    "Sep 27, Thu":[{"match" : "","details":""}],
+    "Sep 28, Fri":[{"match" : "","details":""}],
+    "Sep 29, Sat":[{"match" : "","details":""}],
+    "Sep 30, Sun":[{"match" : "","details":""}]
+}}

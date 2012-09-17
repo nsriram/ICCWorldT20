@@ -1,0 +1,24 @@
+{
+    "groups": {
+        "Group A": [
+                    {"name":"India","logo":"india.png"},
+                    {"name":"England","logo":"england.png"},
+                    {"name":"Afghanistan","logo":"afghanistan.png"}
+                    ],
+        "Group B": [
+                    {"name":"Australia","logo":"australia.png"},
+                    {"name":"West Indies","logo":"windies.png"},
+                    {"name":"Ireland","logo":"ireland.png"}
+                    ],
+        "Group C": [
+                    {"name":"Sri Lanka","logo":"srilanka.png"},
+                    {"name":"South Africa","logo":"southafrica.png"},
+                    {"name":"Zimbabwe","logo":"zimbabwe.png"}
+                    ],
+        "Group D": [
+                    {"name":"Pakistan","logo":"pakistan.png"},
+                    {"name":"New Zealand","logo":"newzealand.png"},
+                    {"name":"Bangladesh","logo":"bangladesh.png"}
+                    ]
+    }
+}
