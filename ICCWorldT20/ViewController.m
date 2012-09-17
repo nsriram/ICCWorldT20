@@ -40,6 +40,10 @@
     [self navigateTo:@"RecordsViewController"];    
 }
 
+-(IBAction) points:(UIButton *)current{
+    [self navigateTo:@"PointsViewController"];
+}
+
 -(IBAction) past:(UIButton *)current{
     [self navigateToPastViewController:@"PastWCViewController" year:[[current titleLabel] text]];
 }

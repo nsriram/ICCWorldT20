@@ -6,5 +6,6 @@
 -(IBAction) records:(UIButton *)current;
 -(IBAction) past:(UIButton *)current;
 -(IBAction) teams:(UIButton *)current;
+-(IBAction) points:(UIButton *)current;
 -(IBAction) grounds:(UIButton *)current;
 @end

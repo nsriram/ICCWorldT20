@@ -23,6 +23,8 @@
 		C34A922015FBDDB1005B78FC /* india.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A921F15FBDDB1005B78FC /* india.png */; };
 		C34A922415FBDEEF005B78FC /* zimbabwe.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A922315FBDEEF005B78FC /* zimbabwe.png */; };
 		C35A97131606DF7000BAE529 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = C35A97121606DF7000BAE529 /* players.json */; };
+		C35A97231607124A00BAE529 /* PointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35A97221607124A00BAE529 /* PointsViewController.m */; };
+		C35A97291607150500BAE529 /* latest.html in Resources */ = {isa = PBXBuildFile; fileRef = C35A97281607150500BAE529 /* latest.html */; };
 		C3763B8015F3D551009EC1F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B7F15F3D551009EC1F8 /* UIKit.framework */; };
 		C3763B8215F3D551009EC1F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B8115F3D551009EC1F8 /* Foundation.framework */; };
 		C3763B8415F3D551009EC1F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3763B8315F3D551009EC1F8 /* CoreGraphics.framework */; };
@@ -87,6 +89,9 @@
 		C34A921F15FBDDB1005B78FC /* india.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = india.png; sourceTree = "<group>"; };
 		C34A922315FBDEEF005B78FC /* zimbabwe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zimbabwe.png; path = ../zimbabwe.png; sourceTree = "<group>"; };
 		C35A97121606DF7000BAE529 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
+		C35A97211607124900BAE529 /* PointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointsViewController.h; sourceTree = "<group>"; };
+		C35A97221607124A00BAE529 /* PointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsViewController.m; sourceTree = "<group>"; };
+		C35A97281607150500BAE529 /* latest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = latest.html; sourceTree = "<group>"; };
 		C3763B7B15F3D551009EC1F8 /* ICCWorldT20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICCWorldT20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3763B7F15F3D551009EC1F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C3763B8115F3D551009EC1F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -238,11 +243,14 @@
 				C3F2A259160567F40054C984 /* TeamsViewController.m */,
 				C37785EC160590500050F40A /* PlayersController.h */,
 				C37785ED160590500050F40A /* PlayersController.m */,
+				C35A97211607124900BAE529 /* PointsViewController.h */,
+				C35A97221607124A00BAE529 /* PointsViewController.m */,
 				C35A97121606DF7000BAE529 /* players.json */,
 				C3E0825F15FBBC8B000B703C /* groups.json */,
 				C39A4E1215FC02AF00D1E433 /* fixtures.json */,
 				C3CF3EF615FCCE6D00D457F7 /* results.json */,
 				C3332A1616054F9B009E59DC /* records.json */,
+				C35A97281607150500BAE529 /* latest.html */,
 			);
 			path = ICCWorldT20;
 			sourceTree = "<group>";
@@ -399,6 +407,7 @@
 				C3CF3EF715FCCE6D00D457F7 /* results.json in Resources */,
 				C3332A1716054F9B009E59DC /* records.json in Resources */,
 				C35A97131606DF7000BAE529 /* players.json in Resources */,
+				C35A97291607150500BAE529 /* latest.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +443,7 @@
 				C398A04316053B2E00D1DCBF /* RecordsViewController.m in Sources */,
 				C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */,
 				C37785EE160590500050F40A /* PlayersController.m in Sources */,
+				C35A97231607124A00BAE529 /* PointsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
