@@ -16,10 +16,11 @@
 
 -(void) viewDidLoad {
     [self.navigationController setNavigationBarHidden:NO];
-    NSString *urlAddress = @"https://raw.github.com/nsriram/ICCWorldT20/master/ICCWorldT20/latest.html";
+    NSString *urlAddress = @"http://localhost:8080/latest.html";
     NSURL *url = [NSURL URLWithString:urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [latestWebView loadRequest:requestObj];
+    [super viewDidLoad];
 }
 
 - (void)viewDidUnload {
