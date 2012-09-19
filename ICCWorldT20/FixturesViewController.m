@@ -1,6 +1,6 @@
 #import "FixturesViewController.h"
 #import "AppConstants.h"
-#import "JSONUtil.h"
+#import "SBJson.h"
 
 @interface FixturesViewController()
 @property (nonatomic, retain) NSArray *days;
@@ -8,7 +8,32 @@
 @end                                    
 
 @implementation FixturesViewController
-@synthesize fixturesTable,days,fixtures;
+@synthesize fixturesTable,days,fixtures,activityIndicator;
+
+-(NSMutableDictionary*) loadJSONFromURL:(NSString*)jsonURL key:(NSString*) key {
+    [activityIndicator startAnimating];
+    NSError *error;
+    NSURL *latestEventsURL = [NSURL URLWithString:jsonURL];
+    NSString *contents  = [NSString stringWithContentsOfURL:latestEventsURL
+                                                   encoding:NSASCIIStringEncoding
+                                                      error:&error];
+    [activityIndicator stopAnimating];
+    if(!contents && error) {
+        UIAlertView *errorAlert = [[UIAlertView alloc]
+                                   initWithTitle: [error localizedDescription]
+                                   message: [error localizedFailureReason]
+                                   delegate:nil
+                                   cancelButtonTitle:@"OK" 
+                                   otherButtonTitles:nil];
+        [errorAlert show];
+    } else {
+        SBJsonParser *parser = [[SBJsonParser alloc] init];
+        NSDictionary *jsonData = (NSDictionary*)[parser objectWithString:contents error:nil];    
+        return [jsonData objectForKey:key];
+    }
+    return [[NSMutableDictionary alloc]init];
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -21,7 +46,7 @@
 
 -(NSMutableDictionary*) fixtures {
     if(!fixtures){
-        fixtures = [JSONUtil loadJSON:@"fixtures" mainKey:@"fixtures"];
+        fixtures = [self loadJSONFromURL:@"https://raw.github.com/nsriram/ICCWorldT20/master/ICCWorldT20/fixtures.json" key:@"fixtures"];
     }
     return fixtures;
 }
