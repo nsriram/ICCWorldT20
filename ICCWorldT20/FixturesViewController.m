@@ -122,6 +122,10 @@
     self.view = self.uiView;
     [activityIndicator removeFromSuperview];
     fixturesTable.backgroundColor = [UIColor clearColor];
+    if(networkError){
+        [self showNotification];
+        return;
+    }
     [self.fixturesTable reloadData];
 }
 
