@@ -8,30 +8,30 @@
 @end                                    
 
 @implementation FixturesViewController
-@synthesize fixturesTable,days,fixtures,activityIndicator;
+@synthesize fixturesTable,days,fixtures,activityIndicator,uiView;
+
+-(void) showNotification{
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Error loading"
+                          message:@" Please check your internet connection"
+                          delegate:nil
+                          cancelButtonTitle:@"Okay"
+                          otherButtonTitles:nil];
+    [alert show];
+}
 
 -(NSMutableDictionary*) loadJSONFromURL:(NSString*)jsonURL key:(NSString*) key {
-    [activityIndicator startAnimating];
     NSError *error;
     NSURL *latestEventsURL = [NSURL URLWithString:jsonURL];
     NSString *contents  = [NSString stringWithContentsOfURL:latestEventsURL
                                                    encoding:NSASCIIStringEncoding
                                                       error:&error];
-    [activityIndicator stopAnimating];
     if(!contents && error) {
-        UIAlertView *errorAlert = [[UIAlertView alloc]
-                                   initWithTitle: [error localizedDescription]
-                                   message: [error localizedFailureReason]
-                                   delegate:nil
-                                   cancelButtonTitle:@"OK" 
-                                   otherButtonTitles:nil];
-        [errorAlert show];
-    } else {
-        SBJsonParser *parser = [[SBJsonParser alloc] init];
-        NSDictionary *jsonData = (NSDictionary*)[parser objectWithString:contents error:nil];    
-        return [jsonData objectForKey:key];
-    }
-    return [[NSMutableDictionary alloc]init];
+        networkError=TRUE;
+    } 
+    SBJsonParser *parser = [[SBJsonParser alloc] init];
+    NSDictionary *jsonData = (NSDictionary*)[parser objectWithString:contents error:nil];    
+    return [jsonData objectForKey:key];
 }
 
 
@@ -117,9 +117,36 @@
 
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad {
+- (void) fixturesTask {
+    [activityIndicator stopAnimating];
+    self.view = self.uiView;
+    [activityIndicator removeFromSuperview];
     fixturesTable.backgroundColor = [UIColor clearColor];
+    [self.fixturesTable reloadData];
+}
+
+- (void) loadDataWithOperation {
+    [self fixtures];
+    [self performSelectorOnMainThread:@selector(fixturesTask) withObject:nil waitUntilDone:YES];
+}
+
+- (void) loadData {
+    NSOperationQueue *queue = [NSOperationQueue new];
+    NSInvocationOperation *operation = [[NSInvocationOperation alloc] 
+                                        initWithTarget:self
+                                        selector:@selector(loadDataWithOperation)
+                                        object:nil];
+    [queue addOperation:operation];
+}
+
+- (void)viewDidLoad {
     [super viewDidLoad];
+    CGRect progressFrame = CGRectMake(50, 50, 75.0, 75.0);
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:progressFrame];
+    activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    self.view = activityIndicator;
+    [activityIndicator startAnimating];
+    [self loadData];
 }
 
 - (void)viewDidUnload {

@@ -282,6 +282,7 @@
                     </view>
                     <connections>
                         <outlet property="fixturesTable" destination="821-Ua-L9Z" id="kZH-7n-yTL"/>
+                        <outlet property="uiView" destination="g7R-oT-yBe" id="zak-D5-sZV"/>
                     </connections>
                 </viewController>
             </objects>
@@ -932,7 +933,9 @@
         <class className="FixturesViewController" superclassName="BaseAppController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FixturesViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="fixturesTable" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="uiView" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="GroundMapViewController" superclassName="BaseAppController">
