@@ -79,6 +79,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "ICCWorldT20"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
