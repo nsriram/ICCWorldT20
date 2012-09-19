@@ -47,6 +47,7 @@
 -(NSMutableDictionary*) fixtures {
     if(!fixtures){
         fixtures = [self loadJSONFromURL:@"https://raw.github.com/nsriram/ICCWorldT20/master/ICCWorldT20/fixtures.json" key:@"fixtures"];
+//        fixtures = [self loadJSONFromURL:@"http://localhost:8080/fixtures.json" key:@"fixtures"];
     }
     return fixtures;
 }
