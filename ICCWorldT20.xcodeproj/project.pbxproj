@@ -22,7 +22,6 @@
 		C34A921415FBD71E005B78FC /* england.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A920815FBD71E005B78FC /* england.png */; };
 		C34A922015FBDDB1005B78FC /* india.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A921F15FBDDB1005B78FC /* india.png */; };
 		C34A922415FBDEEF005B78FC /* zimbabwe.png in Resources */ = {isa = PBXBuildFile; fileRef = C34A922315FBDEEF005B78FC /* zimbabwe.png */; };
-		C34C6828160997CC001BF3BD /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C34C6827160997CC001BF3BD /* app-icon.png */; };
 		C35A97131606DF7000BAE529 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = C35A97121606DF7000BAE529 /* players.json */; };
 		C35A97231607124A00BAE529 /* PointsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35A97221607124A00BAE529 /* PointsViewController.m */; };
 		C35A97291607150500BAE529 /* latest.html in Resources */ = {isa = PBXBuildFile; fileRef = C35A97281607150500BAE529 /* latest.html */; };
@@ -70,6 +69,7 @@
 		C3F219B615FC2F6A0056A92F /* 2010Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */; };
 		C3F219B815FC30B30056A92F /* 2007Winners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3F219B715FC30B30056A92F /* 2007Winners.jpg */; };
 		C3F2A25A160567F50054C984 /* TeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F2A259160567F40054C984 /* TeamsViewController.m */; };
+		C3F95FA71609B60E00786032 /* ICCT2057x57.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F95FA61609B60E00786032 /* ICCT2057x57.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +89,6 @@
 		C34A920815FBD71E005B78FC /* england.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = england.png; sourceTree = "<group>"; };
 		C34A921F15FBDDB1005B78FC /* india.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = india.png; sourceTree = "<group>"; };
 		C34A922315FBDEEF005B78FC /* zimbabwe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = zimbabwe.png; path = ../zimbabwe.png; sourceTree = "<group>"; };
-		C34C6827160997CC001BF3BD /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon.png"; path = "../app-icon.png"; sourceTree = "<group>"; };
 		C35A97121606DF7000BAE529 /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		C35A97211607124900BAE529 /* PointsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointsViewController.h; sourceTree = "<group>"; };
 		C35A97221607124A00BAE529 /* PointsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointsViewController.m; sourceTree = "<group>"; };
@@ -165,6 +164,7 @@
 		C3F219B715FC30B30056A92F /* 2007Winners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2007Winners.jpg; sourceTree = "<group>"; };
 		C3F2A258160567F40054C984 /* TeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamsViewController.h; sourceTree = "<group>"; };
 		C3F2A259160567F40054C984 /* TeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamsViewController.m; sourceTree = "<group>"; };
+		C3F95FA61609B60E00786032 /* ICCT2057x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ICCT2057x57.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +187,7 @@
 		C3763B7015F3D551009EC1F8 = {
 			isa = PBXGroup;
 			children = (
+				C3F95FA61609B60E00786032 /* ICCT2057x57.png */,
 				C3763B8515F3D551009EC1F8 /* ICCWorldT20 */,
 				C3763B7E15F3D551009EC1F8 /* Frameworks */,
 				C3763B7C15F3D551009EC1F8 /* Products */,
@@ -271,7 +272,6 @@
 		C3E0824815FBAB7E000B703C /* images */ = {
 			isa = PBXGroup;
 			children = (
-				C34C6827160997CC001BF3BD /* app-icon.png */,
 				C3F219B715FC30B30056A92F /* 2007Winners.jpg */,
 				C3F219B315FC2F6A0056A92F /* 2009Winners.jpg */,
 				C3F219B415FC2F6A0056A92F /* 2010Winners.jpg */,
@@ -411,7 +411,7 @@
 				C3332A1716054F9B009E59DC /* records.json in Resources */,
 				C35A97131606DF7000BAE529 /* players.json in Resources */,
 				C35A97291607150500BAE529 /* latest.html in Resources */,
-				C34C6828160997CC001BF3BD /* app-icon.png in Resources */,
+				C3F95FA71609B60E00786032 /* ICCT2057x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +481,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sriram Narasimhan";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sriram Narasimhan";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -509,6 +510,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sriram Narasimhan";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sriram Narasimhan";
+				COMPRESS_PNG_FILES = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -530,6 +532,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ICCWorldT20/ICCWorldT20-Prefix.pch";
 				INFOPLIST_FILE = "ICCWorldT20/ICCWorldT20-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -541,6 +544,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ICCWorldT20/ICCWorldT20-Prefix.pch";
 				INFOPLIST_FILE = "ICCWorldT20/ICCWorldT20-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
