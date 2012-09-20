@@ -25,6 +25,7 @@
 - (void)setHeader {
     NSString *headerText = [NSString stringWithFormat:@"%@ T20 WorldCup",pastYear];
     [self.header setText:headerText];
+    [self.navigationItem setTitle:headerText];
 }
 
 - (void)viewDidLoad {
@@ -38,8 +39,6 @@
     [self.mostWickets setText:[pastYearResult objectForKey:@"wickets"]];
     [self.mostCatches setText:[pastYearResult objectForKey:@"catches"]];
     [self.mostSixers setText:[pastYearResult objectForKey:@"sixers"]];
-    
-    
     [super viewDidLoad];
 }
 

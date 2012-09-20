@@ -63,7 +63,6 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
-    [self.navigationController setNavigationBarHidden:YES];
     [self applyGradientBackground];
     [super viewDidLoad];
 }
@@ -73,7 +72,6 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self.navigationController setNavigationBarHidden:YES];    
     [super viewWillAppear:animated];
 }
 

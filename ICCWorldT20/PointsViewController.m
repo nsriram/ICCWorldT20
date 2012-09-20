@@ -15,7 +15,6 @@
 #pragma mark - View lifecycle
 
 -(void) viewDidLoad {
-    [self.navigationController setNavigationBarHidden:NO];
     NSString *urlAddress = @"https://raw.github.com/nsriram/ICCWorldT20/master/ICCWorldT20/latest.html";
 //    NSString *urlAddress = @"http://localhost:8080/latest.html";
     NSURL *url = [NSURL URLWithString:urlAddress];

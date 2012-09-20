@@ -45,6 +45,7 @@
     playersTable.backgroundColor = [UIColor clearColor];
     if(teamName != nil){
         [self.teamLabel setText:teamName];
+        [self.navigationItem setTitle:teamName];
     }
     [super viewDidLoad];
 }

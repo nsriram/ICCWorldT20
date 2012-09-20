@@ -35,7 +35,6 @@
     [self.mapView setRegion:region];
     [self.mapView setMapType:MKMapTypeStandard];
     [self plotStadiums];
-    [self.navigationController setNavigationBarHidden:NO];
     [super viewDidLoad];
 }
 
