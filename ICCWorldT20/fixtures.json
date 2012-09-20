@@ -11,8 +11,5 @@
               {"match" : "England v India","details" : "14:00 GMT, R Premadasa Stadium"}],
     "Sep 24, Mon":[{"match" : "Ireland v West Indies","details" : "14:00 GMT, R Premadasa Stadium"}],
     "Sep 25, Tue":[{"match" : "Bangladesh v Pakistan","details" : "14:00 GMT, Pallekele Stadium"}],
-    "Sep 27, Thu":[{"match" : "","details":""}],
-    "Sep 28, Fri":[{"match" : "","details":""}],
-    "Sep 29, Sat":[{"match" : "","details":""}],
-    "Sep 30, Sun":[{"match" : "","details":""}]
+    "Super Eight Matches":[{"match" : "TBD","details" : "Between Sep 27 & Oct 04"}]
 }}
