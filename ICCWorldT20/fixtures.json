@@ -1,5 +1,4 @@
 {"fixtures":{
-    "T20 League, Completed Matches":[],
     "T20 League, Day 01, Sep 18, Tue":[{"match" : "SriLanka beat Zimbabwe by 82 Runs", "details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
     "T20 League, Day 02, Sep 19, Wed":[{"match" : "Australia beat Ireland by 7Wkts","details" : "10:00 GMT, R Premadasa Stadium"},
                                        {"match" : "India beat Afghanistan by 23 Runs","details" : "14:00 GMT, R Premadasa Stadium"}],
