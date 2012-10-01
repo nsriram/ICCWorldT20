@@ -20,10 +20,11 @@
     "Super Eights, Day  12, Sep 30, Sun":[{"match" : "Australia beat South Africa by 8 Wickets","details" : "10:00 GMT, R Premadasa Stadium"},
                                           {"match" : "India beat Pakistan by 8Wickets","details" : "14:00 GMT, R Premadasa Stadium"}],
     "Super Eights, Day  13, Oct 01, Mon":[{"match" : "W.Indies beat NewZealand in super over","details" : "10:00 GMT, Pallekele Stadium"},
-                                          {"match" : "Group 1 - SriLanka v England","details" : "14:00 GMT, Pallekele Stadium"}],
+                                          {"match" : "SriLanka beat England by 19Runs","details" : "14:00 GMT, Pallekele Stadium"}],
     "Super Eights, Day  14, Oct 02, Tue":[{"match" : "Group 2 - Australia v Pakistan","details" : "10:00 GMT, R Premadasa Stadium"},
-                                          {"match" : "Group 2 - India v South Africa","details" : "14:00 GMT, R Premadasa Stadium"}],
-    "Super Eights, Day  15, Oct 04, Thu":[{"match" : "1st Semi-Final - To Be Decided","details" : "13:30 GMT, R Premadasa Stadium"}],
-    "Super Eights, Day  16, Oct 05, Fri":[{"match" : "2nd Semi-Final - To Be Decided","details" : "13:30 GMT, R Premadasa Stadium"}],
-    "Super Eights, Day  17, Oct 07, Sun":[{"match" : "Final - To Be Decided","details" : "13:30 GMT, R Premadasa Stadium"}]
+                                          {"match" : "Group 2 - India v South Africa","details" : "14:00 GMT, R Premadasa Stadium"}]},
+    "TBD":{
+    "SemiFinal 1, Day  15, Oct 04, Thu":[{"match" : "SriLanka vs TBD","details" : "13:30 GMT, R Premadasa Stadium"}],
+    "SemiFinal 2, Day  16, Oct 05, Fri":[{"match" : "W.Indies vs TBD","details" : "13:30 GMT, R Premadasa Stadium"}],
+    "T20 WorldCup Final, Day  17, Oct 07, Sun":[{"match" : "Final - To Be Decided","details" : "13:30 GMT, R Premadasa Stadium"}]
 }}
