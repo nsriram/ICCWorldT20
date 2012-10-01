@@ -8,11 +8,13 @@
                 font-family:arial;                
                 font-size:13px;
                 align:center;
+                -webkit-border-radius: 2px;
             }
             .table ul {
                 float:left;
                 margin:0;
                 padding:0;
+                -webkit-border-radius: 2px;                
             }
             .table ul.left {
                 width:27%;
@@ -43,6 +45,19 @@
             .clearall{
                 clear:both;
             }
+            .rightheader{
+                font-family:arial;                
+                font-size:16px;
+                text-align:center;
+                font-weight:bold;
+                background:#3980C8;
+                color:#fff; 
+                float:right;
+                margin-right:2.0px;
+                width:99.5%;
+                align:center;
+                -webkit-border-radius: 2px;                
+            }
             .header{
                 font-family:arial;                
                 font-size:16px;
@@ -51,16 +66,33 @@
                 background:#3980C8;
                 color:#fff; 
                 width:99.5%;
+                -webkit-border-radius: 2px;
             }
             .nothing{
                 clear:both;
                 padding:2px 2px 2px 2px;
             }
+            .btn-mini {
+                float:left;
+                font-family:arial;
+                font-weight:bold;                
+                font-size:14px;
+                background: #3980C8;
+                -webkit-border-radius: 2px;
+                width:15%;
+                position: absolute;
+                color:#ffffff;
+                margin-top:2px;
+                border:none;
+            }
             </style>
         <title>ICC World T20</title>
     </head>
     <body>
-        <div class='header'>
+        <div>
+            <button class="btn-mini" type="button" onclick="history.back()">Back</button>        
+        </div>    
+        <div class='rightheader'>
             Super Eight Points
         </div>
         <div class='nothing'></div>        
