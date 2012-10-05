@@ -1,16 +1,16 @@
-{"fixtures":{
-    "T20 League, Day 01, Sep 18, Tue":[{"match" : "SriLanka beat Zimbabwe by 82 Runs", "details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
-    "T20 League, Day 02, Sep 19, Wed":[{"match" : "Australia beat Ireland by 7Wkts","details" : "10:00 GMT, R Premadasa Stadium"},
+{"fixtures":{"Final, Day  17, Oct 07, Sun":[{"match" : "Sri Lanka vs. W.Indies","details" : "13:30 GMT, R Premadasa Stadium"}],
+    "League, Day 01, Sep 18, Tue":[{"match" : "SriLanka beat Zimbabwe by 82 Runs", "details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
+    "League, Day 02, Sep 19, Wed":[{"match" : "Australia beat Ireland by 7Wkts","details" : "10:00 GMT, R Premadasa Stadium"},
                                        {"match" : "India beat Afghanistan by 23 Runs","details" : "14:00 GMT, R Premadasa Stadium"}],
-    "T20 League, Day 03, Sep 20, Thu":[{"match" : "South Africa beat Zimbabwe by 10Wkts","details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
-    "T20 League, Day 04, Sep 21, Fri":[{"match" : "New Zealand beat Bangladesh by 59runs","details" : "10:00 GMT, Pallekele Stadium"},
+    "League, Day 03, Sep 20, Thu":[{"match" : "South Africa beat Zimbabwe by 10Wkts","details" : "14:00 GMT, Mahinda Rajapaksa Stadium"}],
+    "League, Day 04, Sep 21, Fri":[{"match" : "New Zealand beat Bangladesh by 59runs","details" : "10:00 GMT, Pallekele Stadium"},
                                        {"match" : "England beat Afghanistan by 116Runs", "details" : "14:00 GMT, R Premadasa Stadium"}],
-    "T20 League, Day 05, Sep 22, Sat":[{"match" : "South Africa beat Sri Lanka by 32Runs (D/L) ","details" : "10:00 GMT, Mahinda Rajapaksa Stadium"},
+    "League, Day 05, Sep 22, Sat":[{"match" : "South Africa beat Sri Lanka by 32Runs (D/L) ","details" : "10:00 GMT, Mahinda Rajapaksa Stadium"},
                                        {"match" : "Australia by W.Indies by 17Runs(D/L)","details" : "14:00 GMT, R Premadasa Stadium"}],
-    "T20 League, Day 06, Sep 23, Sun":[{"match" : "Pakistan beat New Zealand by 13Runs","details" : "10:00 GMT, Pallekele Stadium"},
+    "League, Day 06, Sep 23, Sun":[{"match" : "Pakistan beat New Zealand by 13Runs","details" : "10:00 GMT, Pallekele Stadium"},
                                        {"match" : "India beat England by 90Runs","details" : "14:00 GMT, R Premadasa Stadium"}],
-    "T20 League, Day 07, Sep 24, Mon":[{"match" : "Ireland v W.Indies - No Result","details" : "14:00 GMT, R Premadasa Stadium"}],
-    "T20 League, Day 08, Sep 25, Tue":[{"match" : "Pakistan beat Bangladesh by 8Wickets","details" : "14:00 GMT, Pallekele Stadium"}],
+    "League, Day 07, Sep 24, Mon":[{"match" : "Ireland v W.Indies - No Result","details" : "14:00 GMT, R Premadasa Stadium"}],
+    "League, Day 08, Sep 25, Tue":[{"match" : "Pakistan beat Bangladesh by 8Wickets","details" : "14:00 GMT, Pallekele Stadium"}],
     "Super Eights, Day  09, Sep 27, Thu":[{"match" : "SriLanka beat New Zealand in super over","details" : "10:00 GMT, Pallekele Stadium"},
                                           {"match" : "W.Indies beat England by 15Runs","details" : "14:00 GMT, Pallekele Stadium"}],
     "Super Eights, Day  10, Sep 28, Fri":[{"match" : "Pakistan beat South Africa by 2Wickets","details" : "10:00 GMT, R Premadasa Stadium"},
@@ -25,6 +25,5 @@
                                           {"match" : "Group 2 - India v South Africa","details" : "14:00 GMT, R Premadasa Stadium"}]},
     "TBD":{
     "SemiFinal 1, Day  15, Oct 04, Thu":[{"match" : "SriLanka beat Pakistan by 16Runs","details" : "13:30 GMT, R Premadasa Stadium"}],
-    "SemiFinal 2, Day  16, Oct 05, Fri":[{"match" : "W.Indies vs TBD","details" : "13:30 GMT, R Premadasa Stadium"}],
-    "T20 WorldCup Final, Day  17, Oct 07, Sun":[{"match" : "Final - To Be Decided","details" : "13:30 GMT, R Premadasa Stadium"}]
+    "SemiFinal 2, Day  16, Oct 05, Fri":[{"match" : "W.Indies beat Australia by 74Runs ","details" : "13:30 GMT, R Premadasa Stadium"}]
 }}
